@@ -1,0 +1,155 @@
+1.#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello MySirG"<<endl;
+}
+2
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello"<<endl<<"MysirG";
+}
+3
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cout<<"Enter two number";
+    cin>>a>>b;
+    c=a+b;
+    cout<<"sum of "<< a <<" and "<< b <<" is "<<c<<endl;
+    return 0;
+}
+4
+#include<iostream>
+using namespace std;
+int main()
+{
+    float area;
+    float pi=3.14,r;
+    cout<<"Enter a radius ";
+    cin>>r;
+    area=pi*r*r;
+    cout<<" area "<< r <<" is "<<area<<endl;
+}
+5
+#include<iostream>
+using namespace std;
+int main()
+{
+    int l,b,h;
+    cout<<"Enter a 3 numbrer";
+    cin>>l>>b>>h;
+    int cubid=l*b*h;
+    cout<<"volume of cubid "<<" "<<cubid;
+    return 0;
+}
+6
+#include<iostream>
+using namespace std;
+int main()
+{
+    int s,a;
+    cout<<" Enter a nos ";
+    cin>>a;
+    s=a*a;
+    cout<<" Square "<< a <<" is "<<s;
+
+}
+7
+#include<iostream>
+using namespace std;
+int main()
+{
+    float a,b,c,avg;
+    cout<<" Enter three number ";
+    cin>>a>>b>>c;
+    avg=(a+b+c)/3.0;
+    cout<<" avg of "<<" 3 number "<<avg;
+}
+8
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,j,n1,n2,n3;
+    cout<<"Enter a 1st element array ";
+    cin>>n1;
+    cout<<"Enter a 2nd element array ";
+    cin>>n2;
+    n3=n1+n2;
+    int a1[n1],a2[n2],a3[n3];
+    int temp;
+    for(i=0;i<n1;i++)
+    {
+        cout<<"Enter a 1st element nos :-" << i;
+        cin>>a1[i];
+        a3[i]=a1[i];
+    }
+   int k=n1;
+   for(i=0;i<n2;i++)
+    {
+        cout<<"Enter a 1st element nos:-"<< i;
+        cin>>a2[i];
+        a3[k]=a2[i];
+        k++;
+    }
+    for(i=0;i<n3;i++)
+    {
+        cout<< a3[i]<<"\t";
+    }
+    cout<<"Swap"<<endl;
+    for(i=0;i<n3-1;i++)
+    {
+        for(j=i+1;j<n3;j++)
+        {
+            if(a3[i]>a3[j])
+            {
+                temp=a3[i];
+                a3[i]=a3[j];
+                a3[j]=temp;
+            }
+        }
+    }
+    for(i=0;i<n3;i++)
+    {
+        cout<<a3[i]<<"\t";
+    }
+}
+9
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,n,max=-1,a[20];
+    cout<<"Enter a number";
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cout<<"enter a element "<< i;
+        cin>>a[i];
+    }
+    for(i=0;i<n;i++)
+    {
+        if(a[i]>max)
+        max=a[i];
+    }
+    cout<<max;
+
+
+}
+10
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a[10]={12,13,15,18,20,89,45,29,11,10},i,sum=0;
+    for(i=0;i<10;i++)
+    {
+        sum=sum+a[i];
+    }
+    cout<<sum;
+}
